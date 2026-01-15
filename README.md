@@ -1,137 +1,82 @@
-Appscrip ReactJS Assignment
+# 🛒 Appscrip ReactJS Assignment – Product Store
 
-A fully functional product listing web application built as part of Appscrip’s frontend evaluation task.
+A clean, responsive product listing application built as part of the Appscrip frontend hiring assignment.
+Features include filtering, sorting, product details, and dynamic UI — built **without Bootstrap or Tailwind CSS**.
 
-🚀 Live Demo
+---
 
-👉 Netlify Link: add your link here
+## 🌐 Live Demo
+👉 **Netlify:** _add your link here_
 
-📂 GitHub Repository
+## 📦 GitHub Repository
+👉 _add your GitHub repo link here_
 
-👉 add your repo link here
+---
 
-🛠️ Tech Stack
+## 🌟 Features
 
-React.js
+- 🛍️ Product listing grid view
+- 🔽 Sort by price (Low → High / High → Low)
+- 🏷️ Category-based product filtering
+- 📄 Product details page
+- 🔄 Dynamic UI powered by API
+- 📱 Responsive layout for all screens
+- 🎨 Pure CSS styling — **No Bootstrap / Tailwind**
+- 🚀 Built using Next.js App Router
+- 🌎 API-powered UI using FakeStore API
+- 🧩 Modular & reusable components
 
-Next.js
+---
 
-JavaScript (ES6+)
+## 🛠️ Tech Stack
 
-CSS (No UI frameworks — No Bootstrap / Tailwind)
+### Frontend
+- Next.js (App Router)
+- React
+- JavaScript (ES6+)
+- CSS (Custom)
+- Fetch API
+- Netlify Hosting
 
-🎯 Assignment Requirements Met
+---
 
-Product listing page
+## 🔧 API & Data Source
 
-Grid UI layout
+Used **FakeStore API** for stable JSON data  
+👉 https://fakestoreapi.com/products
 
-Filter products by category
+📌 Reason for switch:  
+The original assignment API lacked fields needed for:
+- Sorting by price
+- Category filters
+- Detailed view
 
-Sort by price
+FakeStore provided consistent fields (title, price, category, image, description).
 
-Product details page
+---
 
-Pagination / Load more (if implemented)
+## 📋 Requirements Met
 
-Fully responsive UI
+- No UI libraries (Bootstrap/Tailwind ❌)
+- Responsive layout
+- Product list + detail pages
+- Sorting + filtering working
+- Component-based architecture
 
-No CSS frameworks used
+---
 
-🔧 API & Data Handling
+## 📋 Prerequisites
 
-Originally provided API responses lacked certain fields required for filtering and full feature implementation.
+- Node.js (18+ recommended)
+- npm or yarn
+- Git
 
-Therefore:
-✔️ API replaced with FakeStore API
-URL: https://fakestoreapi.com/products
+---
 
-This enabled:
+## 🚀 Getting Started
 
-Category-based filtering
-
-Dynamic price sorting
-
-Detailed product view
-with consistent data.
-
-🧩 Features Implemented
-🛍️ Product List
-
-Display all products fetched via API
-
-Lazy load / re-render on filter sort
-
-🔽 Sorting
-
-Sort by Price – Low to High
-
-Sort by Price – High to Low
-
-🏷️ Filtering
-
-Category filter based on dynamic API categories
-
-📄 Product Details Page
-
-View full description, image, price, category
-
-Navigate back to list
-
-📱 Responsiveness
-
-Fully responsive layout
-
-Desktop / Tablet / Mobile tested
-
-📁 Project Structure
-appscrip-task-ashutosh/
-├── app/
-│   ├── page.js
-│   ├── products/
-│   │   ├── [id]/page.js
-│   └── layout.js
-├── components/
-│   ├── ProductCard.jsx
-│   ├── ProductGrid.jsx
-│   ├── ProductToolbar.jsx
-│   ├── Footer.jsx
-│   └── Header.jsx
-├── styles/
-│   ├── globals.css
-│   ├── header.css
-│   ├── footer.css
-│   ├── product-grid.css
-│   └── product-card.css
-├── README.md
-└── package.json
-
-▶️ How to Run Locally
-git clone <repo-url>
+### 1️⃣ Clone the repo
+```bash
+git clone <your-repo-url>
 cd appscrip-task-ashutosh
-npm install
-npm run dev
 
-
-App will run on:
-
-http://localhost:3000
-
-🚀 Build for Production
-npm run build
-npm start
-
-📝 Notes
-
-Filtering & sorting were adapted based on API structure
-
-No external UI libraries used
-
-Fully custom layout, reusable components, vanilla CSS
-
-Next.js 13+ app router used
-
-🙌 Author
-
-Ashutosh Kumar Jaiswal
-LinkedIn: add your profile link
