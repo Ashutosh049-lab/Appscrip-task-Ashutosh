@@ -190,3 +190,9 @@ https://www.linkedin.com/in/ashutosh-kumar-jaiswal-128054256/
 
 💻 **Portfolio:**  
 https://ashutosh-portfolio-049.netlify.app/
+
+
+## 🎉 Closing Note
+
+Built with ❤️ for the Appscrip engineering assignment.  
+Happy to walk through, discuss architecture decisions, or extend the project anytime!
