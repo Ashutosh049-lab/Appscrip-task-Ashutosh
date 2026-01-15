@@ -180,8 +180,13 @@ Filters products without reload
 ---
  ## 👨‍💻 Author
 
-Ashutosh Kumar Jaiswal
+### **Ashutosh Kumar Jaiswal**
 
-👉 **📧 email:** jashutosh528@gmail.com
-👉 **🔗 LinkedIn:** https://www.linkedin.com/in/ashutosh-kumar-jaiswal-128054256/
-👉 **💻 Portfolio:** https://ashutosh-portfolio-049.netlify.app/
+📧 **Email:**  
+jashutosh528@gmail.com  
+
+🔗 **LinkedIn:**  
+https://www.linkedin.com/in/ashutosh-kumar-jaiswal-128054256/  
+
+💻 **Portfolio:**  
+https://ashutosh-portfolio-049.netlify.app/
