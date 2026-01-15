@@ -1,4 +1,4 @@
-.site-header {
+/* .site-header {
   background-color: #ffffff;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -41,5 +41,153 @@
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+} */
+
+
+
+
+
+
+
+/* ===== SITE HEADER (FLEXBOX) ===== */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 16px 0;
+    gap: 16px;
+  }
+}
+
+/* ===== LOGO ===== */
+.logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+  }
+}
+
+/* ===== NAVIGATION (FLEXBOX) ===== */
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .nav-list {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666666;
+  padding: 8px 4px;
+  transition: color 0.2s;
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #222222;
+}
+
+.nav-link-active {
+  color: #222222;
+  font-weight: 500;
+}
+
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #222222;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 0.75rem;
+  }
+}
+
+/* Hamburger menu for very small screens */
+@media (max-width: 480px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
   }
 }

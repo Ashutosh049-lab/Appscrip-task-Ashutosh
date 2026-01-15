@@ -1,4 +1,4 @@
-.product-grid-section {
+/* .product-grid-section {
   min-height: 200px;
 }
 
@@ -31,4 +31,84 @@
   color: #999999;
   font-size: 12px;
   text-align: center;
+} */
+
+
+
+
+
+/* ===== PRODUCT GRID SECTION ===== */
+.product-grid-section {
+  min-height: 300px;
+  width: 100%;
+}
+
+/* ===== PRODUCT GRID (CSS GRID) ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+/* Desktop: 3 columns for large screens */
+@media (min-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* Mobile: 2 columns on wider phones */
+@media (max-width: 768px) and (min-width: 481px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Mobile: 1 column on small phones */
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* ===== NO RESULTS ===== */
+.no-results {
+  margin: 48px 0;
+  color: #999999;
+  font-size: 1rem;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .no-results {
+    margin: 32px 0;
+    font-size: 0.875rem;
+  }
+}
+
+/* ===== LOADING STATE ===== */
+.product-grid-loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 0;
+  color: #999999;
+}
+
+@media (max-width: 768px) {
+  .product-grid-loading {
+    padding: 32px 0;
+  }
 }
