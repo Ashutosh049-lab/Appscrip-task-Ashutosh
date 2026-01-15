@@ -1,0 +1,41 @@
+.site-footer {
+  margin-top: 40px;
+  padding: 32px 32px 40px;
+  background-color: #000000;
+  color: #f5f5f5;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-copy,
+.footer-note,
+.footer-link {
+  font-size: 11px;
+}
+
+.footer-note {
+  color: #bbbbbb;
+}
+
+.footer-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
